@@ -1,0 +1,878 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C93D2D02603C49800F39283 /* Lift_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D2CF2603C49800F39283 /* Lift_TrackerApp.swift */; };
+		8C93D2D22603C49800F39283 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D2D12603C49800F39283 /* ContentView.swift */; };
+		8C93D2D42603C49900F39283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C93D2D32603C49900F39283 /* Assets.xcassets */; };
+		8C93D2D72603C49900F39283 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C93D2D62603C49900F39283 /* Preview Assets.xcassets */; };
+		8C93D2E22603C49900F39283 /* Lift_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D2E12603C49900F39283 /* Lift_TrackerTests.swift */; };
+		8C93D2ED2603C49A00F39283 /* Lift_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D2EC2603C49A00F39283 /* Lift_TrackerUITests.swift */; };
+		8C93D2F22603C49A00F39283 /* Lift Tracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8C93D2F12603C49A00F39283 /* Lift Tracker WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C93D2F72603C49A00F39283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C93D2F62603C49A00F39283 /* Assets.xcassets */; };
+		8C93D2FE2603C49A00F39283 /* Lift Tracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8C93D2FD2603C49A00F39283 /* Lift Tracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8C93D3032603C49A00F39283 /* Lift_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D3022603C49A00F39283 /* Lift_TrackerApp.swift */; };
+		8C93D3052603C49A00F39283 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D3042603C49A00F39283 /* ContentView.swift */; };
+		8C93D3072603C49A00F39283 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D3062603C49A00F39283 /* NotificationController.swift */; };
+		8C93D3092603C49A00F39283 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D3082603C49A00F39283 /* NotificationView.swift */; };
+		8C93D30B2603C49A00F39283 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D30A2603C49A00F39283 /* ComplicationController.swift */; };
+		8C93D30D2603C49B00F39283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C93D30C2603C49B00F39283 /* Assets.xcassets */; };
+		8C93D3102603C49B00F39283 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C93D30F2603C49B00F39283 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C93D2DE2603C49900F39283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C93D2C42603C49800F39283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C93D2CB2603C49800F39283;
+			remoteInfo = "Lift Tracker";
+		};
+		8C93D2E92603C49A00F39283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C93D2C42603C49800F39283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C93D2CB2603C49800F39283;
+			remoteInfo = "Lift Tracker";
+		};
+		8C93D2F32603C49A00F39283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C93D2C42603C49800F39283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C93D2F02603C49A00F39283;
+			remoteInfo = "Lift Tracker WatchKit App";
+		};
+		8C93D2FF2603C49A00F39283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C93D2C42603C49800F39283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C93D2FC2603C49A00F39283;
+			remoteInfo = "Lift Tracker WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C93D3182603C49B00F39283 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8C93D2FE2603C49A00F39283 /* Lift Tracker WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D31C2603C49B00F39283 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8C93D2F22603C49A00F39283 /* Lift Tracker WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8C93D2CC2603C49800F39283 /* Lift Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lift Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C93D2CF2603C49800F39283 /* Lift_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lift_TrackerApp.swift; sourceTree = "<group>"; };
+		8C93D2D12603C49800F39283 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8C93D2D32603C49900F39283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C93D2D62603C49900F39283 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C93D2D82603C49900F39283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C93D2DD2603C49900F39283 /* Lift TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lift TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C93D2E12603C49900F39283 /* Lift_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lift_TrackerTests.swift; sourceTree = "<group>"; };
+		8C93D2E32603C49A00F39283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C93D2E82603C49A00F39283 /* Lift TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lift TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C93D2EC2603C49A00F39283 /* Lift_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lift_TrackerUITests.swift; sourceTree = "<group>"; };
+		8C93D2EE2603C49A00F39283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C93D2F12603C49A00F39283 /* Lift Tracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lift Tracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C93D2F62603C49A00F39283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C93D2F82603C49A00F39283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C93D2FD2603C49A00F39283 /* Lift Tracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lift Tracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C93D3022603C49A00F39283 /* Lift_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lift_TrackerApp.swift; sourceTree = "<group>"; };
+		8C93D3042603C49A00F39283 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8C93D3062603C49A00F39283 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8C93D3082603C49A00F39283 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		8C93D30A2603C49A00F39283 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8C93D30C2603C49B00F39283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C93D30F2603C49B00F39283 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C93D3112603C49B00F39283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C93D3122603C49B00F39283 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C93D2C92603C49800F39283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2DA2603C49900F39283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2E52603C49A00F39283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2FA2603C49A00F39283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C93D2C32603C49800F39283 = {
+			isa = PBXGroup;
+			children = (
+				8C93D2CE2603C49800F39283 /* Lift Tracker */,
+				8C93D2E02603C49900F39283 /* Lift TrackerTests */,
+				8C93D2EB2603C49A00F39283 /* Lift TrackerUITests */,
+				8C93D2F52603C49A00F39283 /* Lift Tracker WatchKit App */,
+				8C93D3012603C49A00F39283 /* Lift Tracker WatchKit Extension */,
+				8C93D2CD2603C49800F39283 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C93D2CD2603C49800F39283 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C93D2CC2603C49800F39283 /* Lift Tracker.app */,
+				8C93D2DD2603C49900F39283 /* Lift TrackerTests.xctest */,
+				8C93D2E82603C49A00F39283 /* Lift TrackerUITests.xctest */,
+				8C93D2F12603C49A00F39283 /* Lift Tracker WatchKit App.app */,
+				8C93D2FD2603C49A00F39283 /* Lift Tracker WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C93D2CE2603C49800F39283 /* Lift Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				8C93D2CF2603C49800F39283 /* Lift_TrackerApp.swift */,
+				8C93D2D12603C49800F39283 /* ContentView.swift */,
+				8C93D2D32603C49900F39283 /* Assets.xcassets */,
+				8C93D2D82603C49900F39283 /* Info.plist */,
+				8C93D2D52603C49900F39283 /* Preview Content */,
+			);
+			path = "Lift Tracker";
+			sourceTree = "<group>";
+		};
+		8C93D2D52603C49900F39283 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8C93D2D62603C49900F39283 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C93D2E02603C49900F39283 /* Lift TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C93D2E12603C49900F39283 /* Lift_TrackerTests.swift */,
+				8C93D2E32603C49A00F39283 /* Info.plist */,
+			);
+			path = "Lift TrackerTests";
+			sourceTree = "<group>";
+		};
+		8C93D2EB2603C49A00F39283 /* Lift TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C93D2EC2603C49A00F39283 /* Lift_TrackerUITests.swift */,
+				8C93D2EE2603C49A00F39283 /* Info.plist */,
+			);
+			path = "Lift TrackerUITests";
+			sourceTree = "<group>";
+		};
+		8C93D2F52603C49A00F39283 /* Lift Tracker WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8C93D2F62603C49A00F39283 /* Assets.xcassets */,
+				8C93D2F82603C49A00F39283 /* Info.plist */,
+			);
+			path = "Lift Tracker WatchKit App";
+			sourceTree = "<group>";
+		};
+		8C93D3012603C49A00F39283 /* Lift Tracker WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8C93D3022603C49A00F39283 /* Lift_TrackerApp.swift */,
+				8C93D3042603C49A00F39283 /* ContentView.swift */,
+				8C93D3062603C49A00F39283 /* NotificationController.swift */,
+				8C93D3082603C49A00F39283 /* NotificationView.swift */,
+				8C93D30A2603C49A00F39283 /* ComplicationController.swift */,
+				8C93D30C2603C49B00F39283 /* Assets.xcassets */,
+				8C93D3112603C49B00F39283 /* Info.plist */,
+				8C93D3122603C49B00F39283 /* PushNotificationPayload.apns */,
+				8C93D30E2603C49B00F39283 /* Preview Content */,
+			);
+			path = "Lift Tracker WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8C93D30E2603C49B00F39283 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8C93D30F2603C49B00F39283 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C93D2CB2603C49800F39283 /* Lift Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C93D31D2603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift Tracker" */;
+			buildPhases = (
+				8C93D2C82603C49800F39283 /* Sources */,
+				8C93D2C92603C49800F39283 /* Frameworks */,
+				8C93D2CA2603C49800F39283 /* Resources */,
+				8C93D31C2603C49B00F39283 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C93D2F42603C49A00F39283 /* PBXTargetDependency */,
+			);
+			name = "Lift Tracker";
+			productName = "Lift Tracker";
+			productReference = 8C93D2CC2603C49800F39283 /* Lift Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C93D2DC2603C49900F39283 /* Lift TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C93D3202603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift TrackerTests" */;
+			buildPhases = (
+				8C93D2D92603C49900F39283 /* Sources */,
+				8C93D2DA2603C49900F39283 /* Frameworks */,
+				8C93D2DB2603C49900F39283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C93D2DF2603C49900F39283 /* PBXTargetDependency */,
+			);
+			name = "Lift TrackerTests";
+			productName = "Lift TrackerTests";
+			productReference = 8C93D2DD2603C49900F39283 /* Lift TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C93D2E72603C49A00F39283 /* Lift TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C93D3232603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift TrackerUITests" */;
+			buildPhases = (
+				8C93D2E42603C49A00F39283 /* Sources */,
+				8C93D2E52603C49A00F39283 /* Frameworks */,
+				8C93D2E62603C49A00F39283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C93D2EA2603C49A00F39283 /* PBXTargetDependency */,
+			);
+			name = "Lift TrackerUITests";
+			productName = "Lift TrackerUITests";
+			productReference = 8C93D2E82603C49A00F39283 /* Lift TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8C93D2F02603C49A00F39283 /* Lift Tracker WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C93D3192603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift Tracker WatchKit App" */;
+			buildPhases = (
+				8C93D2EF2603C49A00F39283 /* Resources */,
+				8C93D3182603C49B00F39283 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C93D3002603C49A00F39283 /* PBXTargetDependency */,
+			);
+			name = "Lift Tracker WatchKit App";
+			productName = "Lift Tracker WatchKit App";
+			productReference = 8C93D2F12603C49A00F39283 /* Lift Tracker WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8C93D2FC2603C49A00F39283 /* Lift Tracker WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C93D3152603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift Tracker WatchKit Extension" */;
+			buildPhases = (
+				8C93D2F92603C49A00F39283 /* Sources */,
+				8C93D2FA2603C49A00F39283 /* Frameworks */,
+				8C93D2FB2603C49A00F39283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lift Tracker WatchKit Extension";
+			productName = "Lift Tracker WatchKit Extension";
+			productReference = 8C93D2FD2603C49A00F39283 /* Lift Tracker WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C93D2C42603C49800F39283 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					8C93D2CB2603C49800F39283 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8C93D2DC2603C49900F39283 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8C93D2CB2603C49800F39283;
+					};
+					8C93D2E72603C49A00F39283 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 8C93D2CB2603C49800F39283;
+					};
+					8C93D2F02603C49A00F39283 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					8C93D2FC2603C49A00F39283 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 8C93D2C72603C49800F39283 /* Build configuration list for PBXProject "Lift Tracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C93D2C32603C49800F39283;
+			productRefGroup = 8C93D2CD2603C49800F39283 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C93D2CB2603C49800F39283 /* Lift Tracker */,
+				8C93D2DC2603C49900F39283 /* Lift TrackerTests */,
+				8C93D2E72603C49A00F39283 /* Lift TrackerUITests */,
+				8C93D2F02603C49A00F39283 /* Lift Tracker WatchKit App */,
+				8C93D2FC2603C49A00F39283 /* Lift Tracker WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C93D2CA2603C49800F39283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C93D2D72603C49900F39283 /* Preview Assets.xcassets in Resources */,
+				8C93D2D42603C49900F39283 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2DB2603C49900F39283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2E62603C49A00F39283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2EF2603C49A00F39283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C93D2F72603C49A00F39283 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2FB2603C49A00F39283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C93D3102603C49B00F39283 /* Preview Assets.xcassets in Resources */,
+				8C93D30D2603C49B00F39283 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C93D2C82603C49800F39283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C93D2D22603C49800F39283 /* ContentView.swift in Sources */,
+				8C93D2D02603C49800F39283 /* Lift_TrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2D92603C49900F39283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C93D2E22603C49900F39283 /* Lift_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2E42603C49A00F39283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C93D2ED2603C49A00F39283 /* Lift_TrackerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C93D2F92603C49A00F39283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C93D3072603C49A00F39283 /* NotificationController.swift in Sources */,
+				8C93D3052603C49A00F39283 /* ContentView.swift in Sources */,
+				8C93D30B2603C49A00F39283 /* ComplicationController.swift in Sources */,
+				8C93D3032603C49A00F39283 /* Lift_TrackerApp.swift in Sources */,
+				8C93D3092603C49A00F39283 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C93D2DF2603C49900F39283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C93D2CB2603C49800F39283 /* Lift Tracker */;
+			targetProxy = 8C93D2DE2603C49900F39283 /* PBXContainerItemProxy */;
+		};
+		8C93D2EA2603C49A00F39283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C93D2CB2603C49800F39283 /* Lift Tracker */;
+			targetProxy = 8C93D2E92603C49A00F39283 /* PBXContainerItemProxy */;
+		};
+		8C93D2F42603C49A00F39283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C93D2F02603C49A00F39283 /* Lift Tracker WatchKit App */;
+			targetProxy = 8C93D2F32603C49A00F39283 /* PBXContainerItemProxy */;
+		};
+		8C93D3002603C49A00F39283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C93D2FC2603C49A00F39283 /* Lift Tracker WatchKit Extension */;
+			targetProxy = 8C93D2FF2603C49A00F39283 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8C93D3132603C49B00F39283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C93D3142603C49B00F39283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		8C93D3162603C49B00F39283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lift Tracker WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lift Tracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		8C93D3172603C49B00F39283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lift Tracker WatchKit Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lift Tracker WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		8C93D31A2603C49B00F39283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Lift_Tracker_WatchKit_Extension;
+				INFOPLIST_FILE = "Lift Tracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-Tracker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		8C93D31B2603C49B00F39283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = Lift_Tracker_WatchKit_Extension;
+				INFOPLIST_FILE = "Lift Tracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-Tracker.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		8C93D31E2603C49B00F39283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lift Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lift Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C93D31F2603C49B00F39283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lift Tracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lift Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C93D3212603C49B00F39283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lift TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lift Tracker.app/Lift Tracker";
+			};
+			name = Debug;
+		};
+		8C93D3222603C49B00F39283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lift TrackerTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lift Tracker.app/Lift Tracker";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C93D3242603C49B00F39283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lift TrackerUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lift Tracker";
+			};
+			name = Debug;
+		};
+		8C93D3252603C49B00F39283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Lift TrackerUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TWeb.Lift-TrackerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lift Tracker";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C93D2C72603C49800F39283 /* Build configuration list for PBXProject "Lift Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C93D3132603C49B00F39283 /* Debug */,
+				8C93D3142603C49B00F39283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C93D3152603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift Tracker WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C93D3162603C49B00F39283 /* Debug */,
+				8C93D3172603C49B00F39283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C93D3192603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift Tracker WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C93D31A2603C49B00F39283 /* Debug */,
+				8C93D31B2603C49B00F39283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C93D31D2603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C93D31E2603C49B00F39283 /* Debug */,
+				8C93D31F2603C49B00F39283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C93D3202603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C93D3212603C49B00F39283 /* Debug */,
+				8C93D3222603C49B00F39283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C93D3232603C49B00F39283 /* Build configuration list for PBXNativeTarget "Lift TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C93D3242603C49B00F39283 /* Debug */,
+				8C93D3252603C49B00F39283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C93D2C42603C49800F39283 /* Project object */;
+}
