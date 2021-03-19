@@ -11,23 +11,26 @@ import CoreMotion
 struct ContentView: View {
     @State private var isRecording = false
     @State private var accelerationData: [CMAcceleration] = []
-    //    @State private var recordingTime
-    let motion = CMMotionManager()
-
+    @State private var accelerationAverages: [Double] = []
+    @State private var numReps = 0
+    private let motion = CMMotionManager()
+    
     var body: some View {
         let buttonText = isRecording ? "Stop" : "Start"
         let buttonAction = isRecording ? stopRecording : startRecording
-        Button(buttonText, action: buttonAction)
-        if isRecording {
-            
+        VStack {
+            if numReps > 0 {
+                Text("\(numReps) reps")
+            }
+            Button(buttonText, action: buttonAction)
         }
     }
     
-    func startRecording() {
+    private func startRecording() {
         accelerationData.removeAll()
         isRecording = true
         if motion.isDeviceMotionAvailable {
-            motion.deviceMotionUpdateInterval = 1.0 / 1.0
+            motion.deviceMotionUpdateInterval = 1.0 / 60.0
             motion.showsDeviceMovementDisplay = true
             motion.startDeviceMotionUpdates(to: OperationQueue.current!,
                                             withHandler: { (data, error) in
@@ -37,19 +40,62 @@ struct ContentView: View {
                                             })
         }
     }
-        
-    func stopRecording() {
+    
+    private func stopRecording() {
         isRecording = false
         motion.stopDeviceMotionUpdates()
-        
-        print("Acceleration Data:")
+        countReps()
+    }
+    
+    private func countReps() {
+        printRawData()
+        calculateRunningAverageX(count: 20)
+        calculateReps()
+    }
+    
+    private func printRawData() {
+        print("\nRaw Acceleration Data")
         accelerationData.forEach { accelerationReading in
-            print("x: \(truncate(number: accelerationReading.x))\ty: \(truncate(number: accelerationReading.y))\tz: \(truncate(number: accelerationReading.z))")
+            print("\(truncate(accelerationReading.x)), \(truncate(accelerationReading.y)), \(truncate(accelerationReading.z))")
         }
     }
     
-    private func truncate(number: Double) -> String {
-        return String(format: "%.3f", number)
+    private func calculateRunningAverageX(count: Int) {
+        print("\nRunning Average (\(count))")
+        var runningSum = 0.0
+        for (index, element) in accelerationData.enumerated() {
+            runningSum += element.x
+            
+            let numElements: Int
+            if index < count {
+                numElements = index + 1
+            } else {
+                numElements = count
+                let removeIndex = index - count
+                runningSum -= accelerationData[removeIndex].x
+            }
+            let average = runningSum / Double(numElements)
+            accelerationAverages.append(average)
+            print("\(truncate(average))")
+        }
+    }
+    
+    private func calculateReps() {
+        numReps = 0
+        var prevValue: Double?
+        for (index, value) in accelerationAverages.enumerated() {
+            if index > 0 {
+                // We calculate a rep by counting the number of times the running average goes from negative to positive
+                if prevValue! < 0 && value > 0 {
+                    numReps += 1
+                }
+            }
+            prevValue = value
+        }
+    }
+    
+    private func truncate(_ number: Double) -> String {
+        return String(format: "%.5f", number)
     }
 }
 
